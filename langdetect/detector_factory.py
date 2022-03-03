@@ -33,7 +33,7 @@ class DetectorFactory(object):
         self.langlist = []
 
     def load_profile(self, profile_directory):
-        list_files = os.listdir(profile_directory)
+        list_files = ["cs", "en"]
         if not list_files:
             raise LangDetectException(ErrorCode.NeedLoadProfileError, 'Not found profile: ' + profile_directory)
 
